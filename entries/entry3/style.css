@@ -1,0 +1,63 @@
+body{
+  background-color: rgb(255, 229, 246);
+}
+
+.bodycopy {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: left;
+  width: 50px;
+  display: inline;
+}
+
+h1 {
+  color: rgb(87, 87, 87);
+  font-family: 'Bowlby One SC';
+  font-size: 80px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Bowlby One', sans-serif;
+  color: rgb(44, 44, 44);
+  font-size: 30px;
+  text-align: center;
+}
+
+.opening {
+display: flex;
+justify-content:center;
+}
+a:hover {
+  color: rgb(255, 153, 170);
+}
+
+.bldg {
+ filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  display: flex;
+  max-width: auto;
+  height: 270px;
+  justify-content: center;
+  border: 5px;
+  border-style:solid;
+  border-color: aqua;
+  align-content: flex-end;
+ 
+}
+
+.bldg:hover {
+  filter: none;
+   transform: scale(1.1);
+}
+
+.card4 {
+  display: flex;
+  max-width: auto;
+  height: 270px;
+  justify-content: center;
+  align-content: flex-end;
+}

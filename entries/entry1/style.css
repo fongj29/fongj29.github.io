@@ -1,0 +1,66 @@
+
+body {
+    
+    background-image: url("imgs/floor.JPG");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: transparent;
+    /* filter: blur(50px); This used to work and apply on the words/images but now its not working at all */
+    /* This applies to everthing but the background image */
+  }
+  
+h1 {
+    color: rgb(85, 126, 145);
+    font-family: 'Bowlby One SC';
+    font-size: 80px;
+    text-align: center;
+}
+
+h2:hover {
+    opacity: 0.5;
+}
+
+h2 {
+    font-family: 'Bowlby One', sans-serif;
+    color: rgb(44, 44, 44);
+    font-size: 30px;
+    text-align: center;
+    transition: opacity 1.0s;
+}
+
+.opening {
+    display: flex;
+    justify-content:center;
+}
+
+.sign { 
+    display: flex;
+    max-width: auto;
+    height: 270px;
+    justify-content: center;
+    border: 5px;
+    border-style:solid;
+    border-color: aqua;
+    align-content: flex-end;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+/* .image-sign {
+    width: 10px;
+    height: auto;
+} */
+
+.sign:hover {
+    filter: none;
+}
+
+.line {
+    align-items: end;
+    display: flex;
+    border: 3px;
+    border-color: blueviolet;
+    border-style: dashed;
+}

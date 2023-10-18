@@ -1,0 +1,113 @@
+/* body{
+    background-color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 30px;
+}
+
+h1{
+    text-align:left;
+    color: slategrey;
+    
+}
+img{
+    max-width: 40%;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+p{
+    color:slategrey;
+    font-size: 21px;
+    line-height: 120%;
+    text-align: right;  
+
+} */
+
+body {
+    
+  background-image: url("imgs/sky.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: bisque;
+  /* filter: blur(50px); This used to work and apply on the words/images but now its not working at all */
+  /* filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); */
+  /* This applies to everthing but the background image */
+
+
+}
+
+h1 {
+  color: rgb(72, 90, 108);
+  font-family: 'Bowlby One SC';
+  font-size: 80px;
+  text-align: center;
+  text-wrap: nowrap; 
+  /* i understand flex boxes but besides the title, i cant find a place to use a flexbox that wraps content */
+}
+
+h2 {
+  font-family: 'Bowlby One', sans-serif;
+  color: rgb(44, 44, 44);
+  font-size: 30px;
+  text-align: center;
+}
+
+.opening {
+  display: flex;
+  justify-content:center;
+}
+
+.onion {
+  display: flex;
+  max-width: auto;
+  height: 270px;
+  justify-content: center;
+  border: 5px;
+  border-style:solid;
+  border-color: aqua;
+  align-content: flex-end;
+
+}
+
+.line {
+  /* align-items: start;
+  max-width: 70px;
+  height: 70px;
+  border: 3px;
+  border-color: rgb(186, 160, 210);
+  border-style: dashed;
+} */
+  display: flex;
+  max-width: auto;
+  height: 1500px;
+  justify-content: center;
+  border: 5px;
+  border-style:solid;
+  border-color: rgb(142, 182, 182);
+  align-content: flex-end;
+}
+.card {
+  display: flex;
+  max-width: auto;
+  height: 270px;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: show;
+  animation: scroll 20s linear infinite;
+}
