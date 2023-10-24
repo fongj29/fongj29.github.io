@@ -16,6 +16,11 @@ h1 {
     font-family: 'Bowlby One SC';
     font-size: 80px;
     text-align: center;
+    transition: opacity 1.0s;
+}
+
+h1:hover {
+    opacity: 0.5;
 }
 
 h2:hover {

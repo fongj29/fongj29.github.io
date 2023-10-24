@@ -3,7 +3,7 @@ body {
     
     background-image: url("imgs/background.jpg");
     background-size: cover; 
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     /* background-position: center center; */
     /* background-attachment: fixed; */
     background-color: bisque;
@@ -58,6 +58,7 @@ width: 1342.44px;
 height: 2205.49;
 }
 
+
 /* .line {
     align-items: top;
     z-axi
@@ -80,6 +81,12 @@ height: 2205.49;
     height: 270px;
     justify-content: center;
     align-content: flex-end;
+    transition: opacity 2.0s;
+}
+
+.card:hover {
+    filter:opacity(100%);
+    opacity: 0;
 }
 
 @media all and (min-width: 800px) {
