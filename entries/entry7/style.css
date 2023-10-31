@@ -1,0 +1,112 @@
+
+body {
+    
+    background-image: url("imgs/BackgroundIMG.png");
+    background-size: cover; 
+    background-repeat: repeat;
+    /* background-position: center center; */
+    /* background-attachment: fixed; */
+    background-color: bisque;
+  }
+  
+h1 {
+    color: #c6bfbf;
+    font-family: 'Bowlby One SC';
+    font-size: 80px;
+    text-align: center;
+    text-wrap: nowrap; 
+}
+
+h2 {
+    font-family: 'Bowlby One', sans-serif;
+    color: #999397;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+/* .line {
+    height: 2205px;
+    left: 100;
+    top: 0;
+    width: 1342px;
+    position: sticky;
+    left: 800px;
+    opacity: 0;
+} */
+
+img .outgoing {
+    display: flex;
+    justify-content: center;
+    /* this isnt working^ - is it the class? */
+}
+.hovered {
+    height: 2205px;
+    left: 100;
+    /* mix-blend-mode: darken; */
+    top: 0;
+    width: 1342px;
+    position: sticky;
+    left: 800px;
+    opacity:0;
+    transition: opacity 2.0s;
+}
+
+.hovered:hover {
+    opacity: 1;
+}
+
+
+.card {
+    display: flex;
+    max-width: auto;
+    height: 270px;
+    justify-content: center;
+    align-content: flex-end;
+    transition: opacity 2.0s;
+}
+
+.card:hover {
+    filter:opacity(100%);
+    opacity: 0;
+}
+
+@media all and (min-width: 800px) {
+    body {
+    
+        background-image: url("imgs/BackgroundIMG.png");
+        background-size: cover; 
+        background-repeat: no-repeat;
+        /* background-position: center center; */
+        /* background-attachment: fixed; */
+        background-color: bisque;
+      }
+      
+    h1 {
+        color: #999397;
+        font-family: 'Bowlby One SC';
+        font-size: 80px;
+        text-align: center;
+        text-wrap: nowrap; 
+    }
+    
+    h2 {
+        font-family: 'Bowlby One', sans-serif;
+        color: #999397;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    
+    .postcard {
+        display: flex;
+        max-width: auto;
+        max-height: auto;
+        /* height: 270px; */
+        /* justify-content: center; */
+        /* align-content: flex-end; */
+        position: relative;
+    }
+}
+
