@@ -1,0 +1,168 @@
+
+body {
+    
+    background-image: url("imgs/BackgroundIMG.png");
+    background-size: contain; 
+    background-repeat: repeat;
+    /* background-position: center center; */
+    /* background-attachment: fixed; */
+    background-color: black;
+  }
+  
+h1 {
+    color: #B4444F;
+    font-family: 'Cherry Cream Soda';
+    font-size: 24px;
+    text-align: center;
+    text-wrap: nowrap; 
+    border: #999397;
+    border-radius: 2px;
+}
+
+h2 {
+    font-family: 'Krona One';
+    color: #B4444F;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* .line {
+    height: 2205px;
+    left: 100;
+    top: 0;
+    width: 1342px;
+    position: sticky;
+    left: 800px;
+    opacity: 0;
+} */
+
+.outgoing {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: auto;
+    /* this isnt working^ - is it the class? */
+}
+.hovered {
+    /* mix-blend-mode: darken; */
+    opacity:0;
+    transition: opacity 2.0s;
+    max-width: 500px;
+    max-height: auto;
+    display: block;
+    margin: auto;
+}
+
+.hovered:hover {
+    opacity: 1;
+    display: block;
+    margin: auto;
+    max-width: 500px;
+    max-height: auto;
+}
+
+
+.card {
+    display: block;
+    margin-block: 0 auto;
+   
+}
+
+.cardfront {
+    opacity: 1;
+    transition: opacity 3.0s;
+    max-width: 400px;
+    height: auto;
+    position: relative;
+}
+
+.cardfront:hover {
+    filter:opacity(100%);
+    opacity: 0;
+    transition: opacity 3.0s;
+    position: relative;
+}
+
+.cardback {
+    opacity:0;
+    position: absolute;
+    transition: opacity 3.0s;
+    max-width: 400px;
+    height: auto;
+}
+.cardback:hover {
+    opacity: 1;
+    filter:opacity(100%);
+    transition: opacity 3.0s;
+    position: absolute;
+}
+
+.bigL {
+    opacity: 0;
+}
+
+.marquee{
+    opacity: 0;
+}
+
+@media all and (min-width: 800px) {
+    body {
+    
+        background-image: url("imgs/BackgroundIMGL.png");
+        background-size: contain; 
+        background-repeat: no-repeat;
+        /* background-position: center center; */
+        /* background-attachment: fixed; */
+        background-color: #451b1f;
+      }
+      
+    h1 {
+        color: #913c44;
+        font-family: 'Cherry Cream Soda';
+        font-size: 70px;
+        text-align: center;
+        text-wrap: nowrap; 
+    }
+    
+    h2 {
+        font-family: 'Krona One';
+        color: #999397;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .bigL {
+        opacity: 1;
+        max-width: contain;
+        max-height: auto;
+        display: block;
+        margin: auto;
+    }
+    
+    .hovered:hover {
+        opacity: 0;
+    }
+
+    @keyframes scroll {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-200%);
+        }
+      }
+
+      .marquee {
+        white-space: wrap;
+        overflow: show;
+        animation: scroll 20s linear infinite;
+      }
+
+      .cardfront{
+        opacity: 0;
+      }
+      .cardfront:hover{
+        opacity: 0;
+      }
+}
+
