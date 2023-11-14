@@ -98,11 +98,11 @@ h2 {
 }
 
 .bigL {
-    opacity: 0;
+    display: none;
 }
 
 .marquee{
-    opacity: 0;
+    display: none;
 }
 
 @media all and (min-width: 800px) {
