@@ -143,9 +143,15 @@ h2 {
     .hovered {
         display: none;
     }
+
+    .cardsandline {
+        display: flexbox;
+    }
+
+    
     .bigL {
-        display: block;
-        z-index: -1;
+        display: flex;
+        z-index: -100;
         max-width: contain;
         max-height: auto;
         margin: auto;
@@ -168,11 +174,12 @@ h2 {
         }
       }
 
+      
       .scrolling {
-        z-index: 1;
-        display: block;
-        white-space: wrap;
-        overflow: hidden;
+        z-index: 100;
+        display: flex;
+        white-space: space;
+        overflow: show;
         animation: scroll 20s linear infinite;
       }
 
