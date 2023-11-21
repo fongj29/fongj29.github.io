@@ -146,12 +146,14 @@ h2 {
 
     .cardsandline {
         display: flexbox;
+        position: relative;
     }
 
     
     .bigL {
-        display: flex;
+        display: inline;
         z-index: -100;
+        position: absolute;
         max-width: contain;
         max-height: auto;
         margin: auto;
@@ -173,12 +175,10 @@ h2 {
           transform: translateX(-200%);
         }
       }
-
       
       .scrolling {
         z-index: 100;
         display: flex;
-        white-space: space;
         overflow: show;
         animation: scroll 20s linear infinite;
       }

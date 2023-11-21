@@ -6,18 +6,44 @@ let body = document.body;
 // }
 
 function buttonOn() {
-  body.classList.toggle("button");
-  button.classList.toggle("buttonOn");
-  // line.classList.toggle("carddrop");
-    
-    if (buttonOn) {
-      button.innerHTML = '<img src="imgs/postopening.png">'; 
-      card.classList = ("carddrop");
-    } else {
-      button.innerHTML = 'post output'; 
-      card.classList = ("lineandcard");
+  var button = document.querySelector(".button");
+  var card = document.querySelector(".carddrop"); 
+
+  button.classList.toggle("buttonOn"); 
+
+  if (button.classList.contains("buttonOn")) {
+    button.innerHTML = '<img src="imgs/postopening.png">';
+    card.classList.remove('nocard');
+    card.classList.add('carddrop');
+  } else {
+    button.innerHTML = 'post output';
+    card.classList.remove('carddrop');
+    card.classList.add('nocard');
   }
 }
+
+// old code that toggled button on and off but wouldn't change image back:
+// let button = document.querySelector(".button");
+// button.addEventListener("click", buttonOn);
+
+// function buttonOn() {
+//   body.classList.toggle("button");
+//   button.classList.toggle("buttonOn");
+    
+//     if (buttonOn) {
+//       button.innerHTML = '<img src="imgs/postopening.png">'; 
+//       card.classList.remove('lineandcard');
+//       card.classList.add('carddrop');
+//     } else {
+//       button.innerHTML = 'post output'; 
+//       card.classList.remove('carddrop');
+//       card.classList.add('lineandcard');
+//   }
+// }
+
+// let navElement = document.querySelector(".nav")
+// navElement.classList.add("nav carddrop");
+
 // how do i make the button return to normal (without image) when clicked again?
 
 
@@ -52,6 +78,4 @@ function buttonOn() {
 // }
 // }
 
-let button = document.querySelector(".button");
-button.addEventListener("click", buttonOn);
 

@@ -16,26 +16,40 @@
         Panel to Party</h1>
     </div>
   <section>
-    <div class="button"> 
+    <div class="button" onclick="buttonOn()"> 
         <!-- should i make a separate css class for the button when it is clicked in order to create a custom style? and how would i incorporate java-->
       post output
+      
     </div>
 
-
+        <!-- smaller screens: -->
         <div class="lineandcard">
             <div class ="line">
                 <img src="imgs/LineIMG.png" alt="a wavy line gradient that follows the path of the postcard">
             </div>
-          <div class="carddrop">
-            <div class="card"> 
-                <img src="imgs/postcardfront.png">
-            </div>
+
+        <div class="card">
+          <div class="nocard"></div>
+          <div class="carddrop"> 
+              <img src="imgs/postcardfront.png">
           </div>
         </div> 
 
+        <!-- wider screens: -->
+        <div class="cardsandline">
+          <div class="scrolling">
+              <img src="imgs/postcard1.png" class="post1">
+              <img src="imgs/postcard2.png" class="post2">
+              <img src="imgs/postcard3.png" class="post3">
+          </div>
+          <img src="imgs/bigL.png" class="bigL">
+          </div>
 
   </section>
-
+  
+  <div class="letterflex">
+    <div class="letter"><img src="imgs/letter.png"></div>
+</div>
 
   
   <script type="text/javascript" src="main.js">
