@@ -2,11 +2,11 @@
 body {
     background-image: url("imgs/BackgroundIMG.JPG");
     background-size: contain; 
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-color: #23160a;
     
   }
-  
+
   section {
     display:  flex;
     flex-direction:  column;
@@ -33,6 +33,7 @@ body {
   }
 
   .button {
+    margin-top: 50px;
     padding: 10px 40px;
     border-radius: 50px;
     background-color:  #275BA7;
@@ -53,7 +54,7 @@ body {
 
   .buttonOn {
     content: contain;
-    background-color: greenyellow;
+    background-color:#e6c2a4;
     transform: translateY(-10px);
   }
   
@@ -66,15 +67,16 @@ body {
   /* filter: invert(50%);
   -webkit-filter: invert(50%); */
   /* display: block; */
-  position: relative;
+  /* position: relative; */
   display: hide;
   /* https://www.w3schools.com/css/tryit.asp?filename=trycss_zindex2 */
 }
 
 .line {
-    display: inline;
+    display: block;
     z-index: -100;
     position: absolute;
+    left: -100px;
     /* filter: invert(99%);
     -webkit-filter: invert(99%); the filters work but why isn't my line image resizing*/
     /* transform: translate (100px, 50px); */
@@ -114,8 +116,8 @@ body {
 
 @keyframes drop{
   0%{opacity: 0}
-  70%{transform: translateY(800px)}
-  100%{transform: translateY(790px)}
+  70%{transform: translateY(300px)}
+  100%{transform: translateY(290px)}
 }
 
 .letterflex {
@@ -129,16 +131,34 @@ body {
   height: auto;
  }
 
-@media all and (min-width: 800px) {
+ .prevlink {
+  width: 10%;
+  height: 10%;
+  display:inline;
+}
+
+.nextlink {
+  width: 10%;
+  height: 10%;
+  display:inline;
+  margin-left: 120px;
+}
+
+.envelope {
+  display: none;
+}
+
+
+@media all and (min-width: 790px) {
   body {
       background-image: url("imgs/BackgroundIMG.JPG");
       background-size:contain; 
-      background-repeat: no-repeat;
+      background-repeat: repeat;
       /* background-position: center center; */
       /* background-attachment: fixed; */
       background-color: #452e1b;
     }
-    
+
   h1 {
       font-size: 500%;
       color: #cb7428;
@@ -154,7 +174,7 @@ body {
   }
 
   .cardsandline {
-    display: flex;
+    display: block;
     position: relative;
 }
 
@@ -168,6 +188,19 @@ body {
       animation: scroll linear infinite;
   }
 
+  .envelopeOn {
+    display:inline-block;
+    width: 10%;
+    height: 10%;
+  }
+
+  /* .envelope {
+    display: none;
+  } */
+
+  .button {
+    display: none;
+  }
   .lineandcard{
       display: none;
   }

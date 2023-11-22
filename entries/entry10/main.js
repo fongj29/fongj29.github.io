@@ -25,6 +25,21 @@ function buttonOn() {
   }
 }
 
+// function envelopeOn() {
+//   var button = document.querySelector(".envelope");
+
+//   button.classList.toggle("envelopeOn"); 
+
+//   if (button.classList.contains("envelope")) {
+//     // button.innerHTML = '<img src="imgs/envelope">';
+//     envelopeOn.style.display = 'envelope';
+//     // card.classList.remove('nocard');
+//     // card.classList.add('carddrop');
+//   } else {
+//     envelopeOn.style.display = 'envelopeopen';
+//   }
+// }
+
 // old code that toggled button on and off but wouldn't change image back:
 // let button = document.querySelector(".button");
 // button.addEventListener("click", buttonOn);
