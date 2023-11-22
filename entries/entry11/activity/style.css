@@ -1,0 +1,17 @@
+
+body {
+    background-color:  rgb(255, 164, 214);
+    color:  white;
+    font-family: monospace;
+  }
+  
+  h1 {
+    font-weight:  normal;
+  }
+
+
+.red {
+    background-color: rgb(255, 0, 208);
+    font-family: 'Arial';
+    letter-spacing: 10px;
+  }
