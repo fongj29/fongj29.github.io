@@ -84,9 +84,12 @@ body {
     /* transform: translate (150px, 50px); */
     display: none;
 }
+#postcardfront{
+  display: none;
+}
 .carddrop { 
   /* ^should activate when buttonOn? */
-  display: show;
+  display: block;
   /* -webkit-filter: invert(100%);
   filter: invert(100%); */
   animation: drop 2s ease forwards;
