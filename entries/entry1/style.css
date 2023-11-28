@@ -11,16 +11,31 @@ body {
     /* This applies to everthing but the background image */
   }
   
+  .letter {
+    font-family: 'Coming Soon';
+    background-color: #F4ECDF;
+    padding: 30px;
+    overflow: scroll;
+    resize: vertical;
+    border: 1px solid black;
+    /* padding-top: 20px; */
+  }
+
+  p:hover {
+    cursor: vertical-text;
+  }
+
 h1 {
-    color: rgb(85, 126, 145);
+    color: rgb(203, 151, 20);
     font-family: 'Bowlby One SC';
     font-size: 80px;
     text-align: center;
+    letter-spacing: normal;
     transition: opacity 1.0s;
 }
 
 h1:hover {
-    opacity: 0.5;
+    opacity: 0;
 }
 
 h2:hover {
@@ -43,14 +58,12 @@ h2 {
 .sign { 
     display: flex;
     max-width: auto;
-    height: 270px;
+    height: 900px;
     justify-content: center;
-    border: 5px;
-    border-style:solid;
-    border-color: aqua;
     align-content: flex-end;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
+    transition: all 2s;
 }
 
 /* .image-sign {
@@ -65,7 +78,17 @@ h2 {
 .line {
     align-items: end;
     display: flex;
-    border: 3px;
-    border-color: blueviolet;
-    border-style: dashed;
 }
+
+.prevlink {
+    width: 10%;
+    height: 10%;
+    display:inline;
+  }
+  
+  .nextlink {
+    width: 10%;
+    height: 10%;
+    display:inline;
+    margin-left: 120px;
+  }

@@ -41,9 +41,9 @@ h2 {
     max-width: auto;
     height: 270px;
     justify-content: center;
-    border: 5px;
+    /* border: 5px;
     border-style:solid;
-    border-color: aqua;
+    border-color: aqua; */
     align-content: flex-end;
 
 }
@@ -60,15 +60,15 @@ h2 {
     max-width: auto;
     height: 1500px;
     justify-content: center;
-    border: 5px;
+    /* border: 5px;
     border-style:solid;
-    border-color: rgb(142, 182, 182);
+    border-color: rgb(142, 182, 182); */
     align-content: flex-end;
 }
 .card {
     display: flex;
     max-width: auto;
-    height: 270px;
+    height: 670px;
     justify-content: center;
     align-content: flex-end;
 }

@@ -2,16 +2,23 @@ body{
     background-color: rgb(255, 229, 246);
   }
 
-  .bodycopy {
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: normal;
-    text-align: left;
-    width: 50px;
-    display: inline;
- }
+  .letter {
+    background-color: #F4ECDF;
+    padding: 30px;
+    overflow: scroll;
+    resize: vertical;
+    border: 1px solid black;
+    /* padding-top: 20px; */
+  }
+  
+  p {
+    font-family: 'Coming Soon';
+  }
+  
+  p:hover {
+    cursor: grab;
+  }
+  
 
   h1 {
     color: rgb(87, 87, 87);
@@ -33,6 +40,7 @@ body{
 }
   a:hover {
     color: rgb(255, 153, 170);
+    cursor: grab;
   }
 
   .swing {
@@ -40,21 +48,18 @@ body{
     -webkit-filter: grayscale(100%);
     display: flex;
     max-width: auto;
-    height: 270px;
+    height: 470px;
     justify-content: center;
-    border: 5px;
-    border-style:solid;
-    border-color: aqua;
     align-content: flex-end;
+    transition: 1s;
    
   }
 
   .swing:hover {
     filter: none;
-     transform: scale(1.1);
   }
 
-  .card4 {
+  /* .card4 {
     display: flex;
     max-width: auto;
     height: 270px;
@@ -64,4 +69,4 @@ body{
 
 .card4:hover {
   filter:opacity(100%);
-}
+} */

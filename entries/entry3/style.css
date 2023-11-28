@@ -1,8 +1,30 @@
 body{
   background-color: rgb(255, 229, 246);
+  background-image: url("imgs/SignWall.JPG");
+    background-size: contain; 
+    background-repeat: repeat;
+    background-color: #23160a;
 }
 
-.bodycopy {
+.letter {
+  background-color: #F4ECDF;
+  padding: 30px;
+  overflow: scroll;
+  resize: vertical;
+  border: 1px solid black;
+  /* padding-top: 20px; */
+}
+
+p {
+  font-family: 'Coming Soon';
+}
+
+p:hover {
+  cursor: help;
+}
+
+
+/* .bodycopy {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -11,7 +33,7 @@ body{
   text-align: left;
   width: 50px;
   display: inline;
-}
+} */
 
 h1 {
   color: rgb(87, 87, 87);
@@ -40,11 +62,8 @@ a:hover {
   -webkit-filter: grayscale(100%);
   display: flex;
   max-width: auto;
-  height: 270px;
+  height: 170px;
   justify-content: center;
-  border: 5px;
-  border-style:solid;
-  border-color: aqua;
   align-content: flex-end;
  
 }

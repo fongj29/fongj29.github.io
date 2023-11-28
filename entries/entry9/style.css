@@ -19,7 +19,26 @@ h1 {
 
 h1:hover {
     letter-spacing: 15px;
+    cursor: ew-resize;
 }
+
+.letter {
+    background-color: #F4ECDF;
+    padding: 30px;
+    overflow: scroll;
+    resize: vertical;
+    border: 1px solid black;
+    margin: 10%;
+    /* padding-top: 20px; */
+  }
+  
+  p {
+    font-family: 'Coming Soon';
+  }
+  
+  p:hover {
+    cursor: ew-resize;
+  }
 
 h2 {
     font-family: 'Manrope';
@@ -145,20 +164,18 @@ h2 {
     }
 
     .cardsandline {
-        display: flexbox;
-        position: relative;
+        
+        display: flex;
+
+          max-width: 50%;
+
+          margin: auto;
+          position: relative;
     }
 
     
     .bigL {
-        display: inline;
-        z-index: -100;
-        position: absolute;
-        max-width: contain;
-        max-height: auto;
-        margin: auto;
-        animation: scroll 20s linear infinite;
-
+        display: none;
     }
     .outgoing{
         display: none;
@@ -169,7 +186,7 @@ h2 {
 
     @keyframes scroll {
         0% {
-          transform: translateX(100%);
+          transform: translateX(50%);
         }
         100% {
           transform: translateX(-200%);
@@ -180,7 +197,7 @@ h2 {
         z-index: 100;
         display: flex;
         overflow: show;
-        animation: scroll 20s linear infinite;
+        animation: scroll 30s linear infinite;
       }
 
       .card {

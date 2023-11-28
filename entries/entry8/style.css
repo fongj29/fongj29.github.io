@@ -26,6 +26,24 @@ h2 {
     text-align: center;
 }
 
+.letter {
+    background-color: #dec9a8;
+    padding: 30px;
+    overflow: scroll;
+    resize: vertical;
+    border: 1px solid black;
+    margin: 10%;
+    /* padding-top: 20px; */
+  }
+  
+  p {
+    font-family: 'Coming Soon';
+  }
+  
+  p:hover {
+    cursor: crosshair;
+  }
+
 /* .line {
     height: 2205px;
     left: 100;
@@ -83,7 +101,8 @@ h2 {
     position: relative;
 }
 
-.cardback {
+
+/* .cardback {
     opacity:0;
     position: absolute;
     transition: opacity 3.0s;
@@ -95,13 +114,13 @@ h2 {
     filter:opacity(100%);
     transition: opacity 3.0s;
     position: absolute;
-}
+} */
 
 .bigL {
     display: none;
 }
 
-.marquee{
+.cardsandline{
     display: none;
 }
 
@@ -113,7 +132,7 @@ h2 {
         background-repeat: no-repeat;
         /* background-position: center center; */
         /* background-attachment: fixed; */
-        background-color: #451b1f;
+        background-color: #000000;
       }
       
     h1 {
@@ -132,18 +151,28 @@ h2 {
     }
     
     .bigL {
-        opacity: 1;
+        display: none;
+        /* opacity: 1;
         max-width: contain;
         max-height: auto;
         display: block;
-        margin: auto;
+        margin: auto; */
     }
     
     .hovered:hover {
         opacity: 0;
     }
 
-    @keyframes scroll {
+    .cardsandline {
+        display: block;
+          z-index: -100;
+          max-width: 500%;
+          max-height: auto;
+          margin: auto;
+          position: absolute;
+    }
+
+    /* @keyframes scroll {
         0% {
           transform: translateX(100%);
         }
@@ -159,10 +188,7 @@ h2 {
       }
 
       .cardfront{
-        opacity: 0;
-      }
-      .cardfront:hover{
-        opacity: 0;
-      }
+        display: none;
+      } */
 }
 

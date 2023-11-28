@@ -65,9 +65,6 @@ h2 {
   max-width: auto;
   height: 270px;
   justify-content: center;
-  border: 5px;
-  border-style:solid;
-  border-color: aqua;
   align-content: flex-end;
 
 }
@@ -84,9 +81,9 @@ h2 {
   max-width: auto;
   height: 1500px;
   justify-content: center;
-  border: 5px;
+  /* border: 5px;
   border-style:solid;
-  border-color: rgb(142, 182, 182);
+  border-color: rgb(142, 182, 182); */
   align-content: flex-end;
 }
 .card {
@@ -95,6 +92,23 @@ h2 {
   height: 270px;
   justify-content: center;
   align-content: flex-end;
+}
+
+.letter {
+  background-color: #F4ECDF;
+  padding: 30px;
+  overflow: scroll;
+  resize: vertical;
+  border: 1px solid black;
+  /* padding-top: 20px; */
+}
+
+p {
+  font-family: 'Coming Soon';
+}
+
+p:hover {
+  cursor: wait;
 }
 
 @keyframes scroll {
@@ -108,6 +122,9 @@ h2 {
 
 .marquee {
   white-space: nowrap;
-  overflow: show;
-  animation: scroll 20s linear infinite;
+  overflow: hide;
+  animation: scroll 22s linear infinite;
+}
+.nextlink {
+  margin-right: 10px;
 }
