@@ -116,6 +116,7 @@ position: absolute;
         align-content: flex-end;
         transition: opacity 2.0s;
         margin: auto;
+        z-index: -10;
 }
 
 @media all and (min-width: 1100px) {

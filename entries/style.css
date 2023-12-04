@@ -1,14 +1,80 @@
 body {
-    background-color: rgb(251, 242, 231);
-    font-family: 'Bowlby One', sans-serif;
-  }
+  background-color: rgb(251, 242, 231);
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #563c25;
+  font-family: 'Bowlby One';
+  font-size: 500%;
+  letter-spacing: 5px;
+  text-align: center;
+  transition: 1s;
+}
+
+h1:hover {
+  letter-spacing: 15px;
+  transition: 1s ease;
+}
 
 .links {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    justify-content: space-around;
-    align-items: center;
-    /* opacity: 50%; */
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1%;
+  /* border: 1px solid rgb(255, 33, 33); */
 }
+
+.envelope {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  /* flex: 1 0 300px; */
+  width: 300px;
+  height: 300px;
+  /* border: 1px solid rgb(33, 255, 74); */
+}
+
+.closed,
+.open {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  transition: opacity 0.25s ease;
+  /* border: 1px solid rgb(33, 44, 255) */
+}
+
+.open {
+  opacity: 0;
+  margin-top: -350px;
+  z-index: 0;
+  
+}
+
+.closed {
+  margin-top: 20px;
+}
+
+/* On hover, opacity changes to show/hide the images */
+.envelope:hover .closed {
+  opacity: 0;
+ /* Adjusting the negative margin to overlap */
+  z-index: -10;
+}
+
+.envelope:hover .open {
+  opacity: 1;
+  z-index: 10;
+  
+}
+
+

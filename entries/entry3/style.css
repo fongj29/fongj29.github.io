@@ -36,15 +36,15 @@ p:hover {
 } */
 
 h1 {
-  color: rgb(87, 87, 87);
-  font-family: 'Bowlby One SC';
+  color: rgb(215, 62, 62);
+  font-family: Georgia;
   font-size: 80px;
   text-align: center;
 }
 
 h2 {
   font-family: 'Bowlby One', sans-serif;
-  color: rgb(44, 44, 44);
+  color: rgb(243, 105, 105);
   font-size: 30px;
   text-align: center;
 }
