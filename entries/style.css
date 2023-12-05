@@ -64,7 +64,7 @@ h1:hover {
   margin-top: 20px;
 }
 
-/* On hover, opacity changes to show/hide the images */
+
 .envelope:hover .closed {
   opacity: 0;
  /* Adjusting the negative margin to overlap */
