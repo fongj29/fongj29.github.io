@@ -1,0 +1,85 @@
+body {
+    background-color: #000000;
+    cursor: url(imgs/cursor-run.png), grab;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    /* margin-bottom: -10px; */
+    display: block;
+}
+
+.firstset {
+    opacity:0.1;
+}
+
+/* .images {
+    opacity: .7;
+    transition: 2s;
+}
+.images:hover {
+        opacity:1;
+        cursor: url(imgs/cursor-step.png), pointer;
+    } */
+
+audio {
+        filter: opacity(.2);
+        width: 250px;
+        height: 25px;
+        transition: all, 2s;
+}
+
+    audio:hover {
+        filter: opacity(1);
+    }
+
+    .clouds {
+        position: absolute;
+        top: 200px;
+        left: 1050px;
+    }
+
+    .rocks {
+        position: absolute;
+        top: 875px;
+        left: 120px; 
+    }
+
+    .waves {
+        position: absolute;
+        top: 600px;
+        left: 1000px; 
+    }
+
+    .sun {
+        position: absolute;
+        top: 475px;
+        left: 100px; 
+    }
+
+    .overall {
+        position: absolute;
+        top: 75px;
+        left: 50px; 
+    }
+
+    .next {
+        position: fixed;
+        bottom: 15px;
+        right: 50px;  
+    }
+
+    .next:hover {
+        cursor: url(imgs/cursor-step.png),pointer;
+    }
+
+/* img + img {
+    top: 0;
+    left: 0;
+}
+
+#clouds {
+    top: 0;
+    left: 0;
+} */
