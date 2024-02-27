@@ -10,6 +10,28 @@ body {
     display: block;
 }
 
+p {
+    font-family: arial, helvetica, sans-serif;
+    color: gray;
+    text-align: left;
+}
+
+#randomButton {
+    position: fixed;
+    top: 50%;
+    left: 41%;
+    height: auto;
+    width: 300px;
+}
+
+#randomButton:hover {
+    cursor: url(imgs/cursor-step.png),pointer;
+    content: url(imgs/shell-hover.png); /* Path to the new image */
+
+}
+
+
+
 .firstset {
     opacity:0.1;
 }
@@ -23,56 +45,173 @@ body {
         cursor: url(imgs/cursor-step.png), pointer;
     } */
 
-audio {
-        filter: opacity(.2);
-        width: 250px;
-        height: 25px;
-        transition: all, 2s;
+.p1 {
+    text-align: center;
+    transition: 5s;
 }
 
-    audio:hover {
-        filter: opacity(1);
-    }
+.p1:hover {
+    color: bisque;
+    transition: 2s;
+}
 
+.p2 {
+    transition: 5s;
+}
+
+.p2:hover {
+    color: bisque;
+    transition: 2s;
+}
+
+audio {
+        filter: opacity(.8);
+        width: 250px;
+        height: 25px;
+        /* transition: all, 2s; */
+        
+}
+
+    /* audio:hover {
+        filter: opacity(1);
+    } */
+.displayText {
+    color: bisque;
+    padding-right: 20px;
+}
     .clouds {
         position: absolute;
-        top: 200px;
-        left: 1050px;
+        top: 27%;
+        left: 45%;
+
     }
 
     .rocks {
         position: absolute;
-        top: 875px;
-        left: 120px; 
+        top: 95%;
+        left: 15%; 
+        padding-right: 10%;
     }
 
     .waves {
         position: absolute;
-        top: 600px;
-        left: 1000px; 
+        top: 70%;
+        left: 60%;
     }
 
     .sun {
         position: absolute;
-        top: 475px;
-        left: 100px; 
+        top: 45%;
+        left: 10%; 
+        padding-right: 10%;
     }
 
     .overall {
         position: absolute;
-        top: 75px;
+        top: 55px;
         left: 50px; 
     }
 
     .next {
         position: fixed;
-        bottom: 15px;
-        right: 50px;  
+        bottom: 20px;
+        right: 30px;  
+        height: auto;
+        width: 100px;
     }
 
     .next:hover {
         cursor: url(imgs/cursor-step.png),pointer;
+        rotate: 20deg;
     }
+
+    .back {
+        position: fixed;
+        bottom: 20px;
+        left: 30px;  
+        height: auto;
+        width: 100px;
+    }
+
+    .back:hover {
+        cursor: url(imgs/cursor-step.png),pointer;
+        rotate: -20deg;
+    }
+
+    .altdesc {
+        position: absolute;
+        color: bisque;
+        padding-right: 20px;
+        padding-left: 20px;
+        top: 20px;
+        font-size: 20px;
+    }
+    .fakealtclouds {
+        position: absolute;
+        color: bisque;
+        padding-right: 20px;
+        padding-left: 20px;
+        top: 200px;
+    }
+
+    .fakealtsun {
+        position: absolute;
+        color: rgb(255, 239, 219);
+        padding-right: 20px;
+        padding-left: 20px;
+        top: 50%;
+    }
+
+    .fakealtwaves {
+        position: absolute;
+        color: bisque;
+        padding-right: 20px;
+        padding-left: 20px;
+        top: 700px;
+    }
+
+    .fakealtrocks {
+        position: absolute;
+        color: bisque;
+        padding-right: 20px;
+        padding-left: 20px;
+        top: 105%;
+    }
+
+    .resource {
+        position: fixed;
+        bottom: 20px;
+        left: 46%;  
+    }
+
+a {
+    color: #7b9fbc;
+    font-family: sans-serif;
+  }
+    a:visited {
+    color: #a689ca; 
+  }
+    a:hover {
+    color: #d78ab7; 
+  }
+    a:active {
+    color: #b57070; 
+  }
+
+  /* .hidden-image {
+   opacity:0
+  } */
+
+
+    /* .suntext {
+        display:block;
+        text-align: left;
+        height: auto;
+        width: 300px;
+    } */
+
+  
+
 
 /* img + img {
     top: 0;
