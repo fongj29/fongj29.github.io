@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(212, 207, 195);
+    overflow-x: hidden; /* Enable horizontal scrolling for the entire body */
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    color: rgb(111, 67, 29);
+
+}
+
+
+h1 {
+    color: rgb(111, 67, 29);
+    font-size: 15vh;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(190, 190, 190);
+    font-size: 10vh;
+    padding: 1%;
+}
+
+.floor-container {
+    height: 20vh;
+    position: inline-block;
+    width: 100vw;
+  }
+
+.door {
+    position: inline-block;
+    top: 1vw;
+    left: 5vh;
+    max-height: 100px;
+    width: auto;
+}
+
+.door:hover {
+    /* top: 1vw;
+    left: 5vh; */
+    max-height: 113px;
+    width: auto;
+    cursor:pointer;
+}
+
+.door:active {
+    cursor:grabbing;
+}
+
+.door-container.empty {
+    visibility: hidden;
+  }
+
+.floor {
+    height: 2vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.sixfloor {
+    background-color: #A83D3D;
+    height: 20vh;
+    position: inline;
+    width: 100vw;
+}

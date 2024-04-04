@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'NeueH1';
+    src: url('fonts/NeueDisplay-Random\ \(1\).otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NeueH2';
+    src: url('fonts/Neue-RegularItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NeueP';
+    src: url('fonts/Neue-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    background-color: rgb(208, 208, 208);
+    overflow-x: hidden; /* Enable horizontal scrolling for the entire body */
+    font-family:  Arial, sans-serif;
+    color: rgb(108, 108, 108);
+    margin: 0;
+}
+
+
+h1 {
+    color: rgb(108, 108, 108);
+    font-size: 12vh;
+    font-family: 'NeueH1', Helvetica;
+    text-align: center;
+    /* transition: all .75s; */
+    /* position: -webkit-sticky;
+    position: sticky; */
+    top: 0;
+    padding: 5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+h2 {
+    /* (floor names:) 6th, 5th, 4th, 3rd */
+    color: rgb(179, 179, 179);
+    font-family: 'NeueH2', Helvetica;
+    font-size: 9vh;
+    padding: 10px;
+    margin-left:10px;
+    display: inline-block;
+    bottom:15%;
+    position: relative;
+    /* border: yellow solid 2px; */
+}
+
+p {
+    font-family: 'NeueP', sans-serif;
+    line-height: 150%;
+    display: flex;
+    /* word-wrap: break-word;
+    overflow-wrap: break-word; */
+}
+
+img {
+    white-space: nowrap;
+}
+img:hover {
+    cursor: pointer;
+}
+img:active {
+    cursor: grabbing;
+}
+
+
+/* .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  } */
+  
+.door-container {
+    /*     display: flex; */
+        align-items: center;
+        justify-content: center;
+        /* border: yellow solid 2px; */
+        bottom:5.95vh;
+        top: 6.7vh;
+        position:absolute;
+        z-index: 1;
+        left: 25%; /* Position the door container horizontally centered within the floor */
+        transform: translate(0, -50%); /* Center the door container precisely */
+    }
+
+.door {
+    /* top: 0;
+    left: 50px; */
+    position: absolute;
+    /* border: white solid 2px; */
+    max-height: 15vh;
+    width: auto;
+    filter: saturate(0);
+}
+
+.door:hover {
+    /* top: 6px; */
+    /* left: -2px; */
+    max-height: 17.15vh;
+    width: auto;
+    cursor:pointer;
+}
+
+.door:active {
+    cursor:grabbing;
+}
+.door-container.empty {
+    visibility: hidden;
+}
+
+.floor {
+    height: 20vh;
+    width: 100%; /* Changed width to 100% */
+    margin-bottom: 5vh;
+    color: rgb(195, 195, 195);
+    position: relative; /* Changed display to position */
+    /* border: lime solid 2px; */
+}
+
+.door-container p {
+    /* color:pink; */
+    position: relative ;
+    left: 120px;
+    /* top: 20px; */
+}
+
+.ground {
+    height: 2vh;
+    width: 100%;
+    background-color: rgb(108, 108, 108);
+    bottom:0px;
+    position:absolute;
+    /* display:block; */
+}
+
+.six {
+    background-color: #A83D3D;   
+}
+.five {
+    background-color: #335db1;
+}
+.four {
+    background-color: #39a531;
+}
+.three {
+    background-color: #E9C236;
+    color: rgb(140, 140, 140);
+}
+.three h2 {
+    color: rgb(140, 140, 140);
+}
+
+.setting {
+    width: 100vw; /* Set the width to 100% of the viewport width */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    object-fit: cover; /* Ensure the image covers the entire container, maintaining aspect ratio */
+}
+
+.nav {
+    background-color: rgb(108, 108, 108);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 3%;
+    z-index: 3;
+    opacity: .9;
+}
+
+.nav p {
+    color:white;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    /* flex-wrap: wrap-reverse; */
+    width: 100%;
+}
+
+.nav a {
+    /* color: #333; */
+    margin-right: auto;
+}
+
+a {
+    color: #c2d8ff;
+  }
+  a:visited {
+    color: #ecd1ff;
+  }
+  a:hover {
+    color: rgb(255, 255, 255);
+  }
+  a:active {
+    color: rgb(255, 208, 208);
+  }
+::selection {
+    background-color: #ff0000;
+    color: black;
+}
+
+.goto {
+    color: white;
+    text-decoration: none; /* Remove underline */
+}
+.goto:visited {
+    color:white;
+}
+
+h1 .goto:visited {
+    color: rgb(108, 108, 108);
+}
+h1 .goto {
+    color: rgb(93, 93, 93);
+}
+
+h3 .goto:visited {
+    color: rgb(108, 108, 108); 
+}
+
+h3 .goto {
+    color: rgb(93, 93, 93);
+}
+
+/* NEXT SECTION: FLOORS */
+
+h3 {
+    font-size: 5vw;
+    text-align: center;
+    font-family: 'NeueH2', Arial, sans-serif;
+}
+
+.description {
+    padding: 2vh;
+    padding-bottom:4vh;
+}
+
+.inside {
+    position: relative;
+}
+
+@media screen and (max-width: 700px) {
+
+    /* body {
+        background-color:red;
+    } */
+
+    h1 {
+        color: rgb(108, 108, 108);
+        font-size: 7vh;
+    }
+    h2 {
+        font-size: 7vh;
+        padding: 30px;
+        margin-left:-1%;
+        bottom:15%;
+    }
+    .door-container {
+        bottom:5.65vh;
+        top: 6.9vh;
+        position:absolute;
+        z-index: 1;
+        left: 35%; /* Position the door container horizontally centered within the floor */
+        transform: translate(0, -50%); /* Center the door container precisely */
+    }
+    .door-container p {
+        left: 110px;
+    }
+  }
+
+  @media screen and (min-height: 970px) and (min-width: 0px) {
+/* 
+    body {
+        background-color:pink;
+    } */
+    .door-container p {
+        left: 160px;
+    }
+  }
+
+  /* @media screen and (max-height: 770px) {
+
+    .description {
+        line-height: 100%;
+    }
+
+  } */
