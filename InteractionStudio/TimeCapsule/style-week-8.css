@@ -43,7 +43,7 @@ h1 {
 
 h2 {
     /* (floor names:) 6th, 5th, 4th, 3rd */
-    color: rgb(179, 179, 179);
+    color: rgb(238, 238, 238);
     font-family: 'NeueH2', Helvetica;
     font-size: 9vh;
     padding: 10px;
@@ -121,7 +121,7 @@ img:active {
     height: 20vh;
     width: 100%; /* Changed width to 100% */
     margin-bottom: 5vh;
-    color: rgb(195, 195, 195);
+    color: rgb(238, 238, 238);
     position: relative; /* Changed display to position */
     /* border: lime solid 2px; */
 }
@@ -149,7 +149,7 @@ img:active {
     background-color: #335db1;
 }
 .four {
-    background-color: #39a531;
+    background-color: #3bb133;
 }
 .three {
     background-color: #E9C236;
@@ -179,7 +179,7 @@ img:active {
 }
 
 .nav p {
-    color:white;
+    color:rgb(208, 208, 208);
     margin: 0;
     display: flex;
     justify-content: flex-start;
