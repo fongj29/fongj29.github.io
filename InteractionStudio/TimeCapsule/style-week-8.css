@@ -24,12 +24,8 @@ body {
     font-family:  Arial, sans-serif;
     color: rgb(108, 108, 108);
     margin: 0;
-    cursor: url(imgs/mute.svg),pointer;
 }
 
-.custom-cursor {
-    cursor: url(imgs/mute.svg),pointer;
-}
 
 h1 {
     color: rgb(108, 108, 108);
@@ -69,8 +65,8 @@ p {
 img {
     white-space: nowrap;
 }
-img:hover {
-    cursor: pointer;
+.setting:hover {
+    cursor: url(imgs/sound.png), pointer;
 }
 img:active {
     cursor: grabbing;
