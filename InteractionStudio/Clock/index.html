@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Itim&family=Kalam:wght@300;400;700&family=Modak&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Stint+Ultra+Expanded&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sunrise and Sunset Times for NYC</h1>
+      <p class="muted">
+        Example using the
+        <a href="https://sunrisesunset.io/api/" target="_blank"
+          >SunriseSunset.io API</a
+        >.
+      </p>
+      <div class="time-row">
+        <div class="block">
+          <div class="label">Sunrise</div>
+          <div class="data">
+            <strong><span id="sunrise"></span></strong>
+          </div>
+        </div>
+        <div class="block">
+          <div class="label">Sunset</div>
+          <div class="data">
+            <strong><span id="sunset"></span></strong>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="label">Raw data from API response</div>
+        <div class="data"><code id="raw-output"></code></div>
+      </div>
+      <div class="footer">
+        <a href="https://sunrisesunset.io/api/" target="_blank"
+          >SunriseSunset API Documentation</a
+        >
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

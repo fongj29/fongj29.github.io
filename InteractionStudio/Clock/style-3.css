@@ -1,0 +1,59 @@
+#div1 {
+    /* this is the pot */
+    width: 50vw;
+    height:50vh;
+    bottom: 5vh;
+    left: 25%;
+    padding: 10px;
+    background-color: #b1b1b1; /* Pot color */
+    border-radius: 0 0 20% 20%; /* Rounded top */
+    position: absolute;
+    overflow: scroll;
+    border: 1vw solid #b1b1b1; /* Bottom border */
+    border-top: none;
+    display: flex; /* Stack eggs horizontally */
+    flex-direction: row; /* Stack eggs in a row */
+  }
+  
+  .egg-container {
+    position: relative;
+}
+
+.egg {
+  width: 100px;
+  height: 120px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  position: relative;
+  padding-top: 10%; /* Adjust top padding to position input element approximately 10% from the top */
+}
+
+.egg-input {
+  width: 100px;
+  height: 120px;
+  background-color: #F7F2E3;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  position: relative;
+  cursor: grab; /* Change cursor to indicate draggable element */
+  z-index: 1;
+  text-align: center;
+}
+
+.egg-input input[type="text"]::placeholder {
+  position: absolute;
+  text-align: center;
+
+}
+
+.yolk {
+  border: none;
+  z-index: 2;
+  position: absolute;
+  width: 60px;
+  height: 65px;
+  opacity: .75;
+  background-color: #ffcc00; /* orange color for yolk */
+  border-radius: 50%; /* circle shape */
+  bottom: 0; /* Position it at the bottom of the egg */
+  left: 50%; /* Position it at the horizontal center of the egg */
+  transform: translateX(-50%); /* Adjust horizontal position */
+}

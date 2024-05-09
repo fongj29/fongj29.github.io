@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="style-3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Itim&family=Kalam:wght@300;400;700&family=Modak&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Stint+Ultra+Expanded&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <p>Write your task on the egg, and drag it into the pot to start!</p>
+
+    <div id="div1" class="pot" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    
+    <div class="egg-container">
+        <div class="egg" id="egg" draggable="true" ondragstart="drag(event)">
+            <input class="egg-input" type="text" name="taskName" placeholder="Task Name">
+            <input class="yolk" type="number" name="taskTime" placeholder="Time (mins)">
+        </div>
+    </div>
+
+<script src="script-3.js"></script>
+</body>
+</html>
