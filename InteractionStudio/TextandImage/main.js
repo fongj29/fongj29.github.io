@@ -58,17 +58,17 @@ const pages = [
     const randomNumber = Math.random();
     let randomPage;
   
-    // Determine the random page based on probability
-    if (randomNumber < 0.9656) {
-      // 96.56% chance for the first link
-      randomPage = pages[0];
-    } else if (randomNumber < 0.9828) {
-      // 1.72% chance for the second link
-      randomPage = pages[1];
-    } else {
-      // 1.72% chance for the third link
-      randomPage = pages[2];
-    }
+// Determine the random page based on probability
+if (randomNumber < 0.92) {
+  // 92% chance for the first link
+  randomPage = pages[0];
+} else if (randomNumber < 0.96) {
+  // 4% chance for the second link
+  randomPage = pages[1];
+} else {
+  // 4% chance for the third link
+  randomPage = pages[2];
+}
   
     // Redirect the user to the random page
     window.location.href = randomPage;
