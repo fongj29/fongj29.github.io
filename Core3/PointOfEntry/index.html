@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Doors of New York</title>
+  <style>
+    /* Set the size of the map */
+    #map {
+      height: 100%;
+      width: 100%;
+    }
+
+    /* Optional: Set body and html height to ensure the map takes full screen */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Simple styling for the header */
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Explore Accessible Doors in New York City</h1>
+</header>
+
+<!-- The div element for the map -->
+<div id="map"></div>
+
+
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9By8Chcuj0GdEhBnaiTd4BmAFRWo3QMM&loading=async&callback=initMap">
+</script>
+
+</body>
+</html>
