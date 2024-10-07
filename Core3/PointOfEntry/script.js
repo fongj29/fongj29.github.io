@@ -10,4 +10,5 @@ function initMap() {
       map: map
     });
   }
+  console.log ("This is the Point.");
   
