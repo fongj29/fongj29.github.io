@@ -1,0 +1,26 @@
+    /* Set the size of the map */
+    #map {
+        height: 100%;
+        width: 100%;
+      }
+  
+      /* Optional: Set body and html height to ensure the map takes full screen */
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+  
+      /* Simple styling for the header */
+      h1 {
+        text-align: center;
+        padding: 20px;
+        background-color: #f8f8f8;
+        color: #41ad49;
+        border-bottom: 1px solid #41ad49;
+        border-top: 1px solid #41ad49;
+        font-family: "verdana-pro-condensed", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
