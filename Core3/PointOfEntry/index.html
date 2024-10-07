@@ -1,30 +1,31 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accessible Doors of New York</title>
-  <link rel="stylesheet" href="https://use.typekit.net/ong0iid.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<html>
+  <head>
+    <title>Simple Marker</title>
+    <!-- The callback parameter is required, so we use console.debug as a noop -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4ozIe7u2lvu1Zbl5DVue2zDVPfLMgo-c&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      gmp-map {
+        height: 100%;
+      }
 
-<header>
-  <h1>Point of Entry</h1>
-</header>
-
-<!-- The div element for the map -->
-<div id="map"></div>
-
-
-
-
-
-
-<script src="script.js?v=1.0"></script>
-<script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9By8Chcuj0GdEhBnaiTd4BmAFRWo3QMM&loading=async&callback=initMap">
-</script>
-
-</body>
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <gmp-map center="40.73356628417969,-73.98146057128906" zoom="14" map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker position="40.73356628417969,-73.98146057128906" title="My location"></gmp-advanced-marker>
+    </gmp-map>
+  </body>
 </html>
