@@ -12,14 +12,18 @@ html, body {
   
       /* Simple styling for the header */
 h1 {
-    text-align: center;
-    padding: 20px;
     color: #41ad49;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #41ad49;
-    border-top: 1px solid #41ad49;
+    background-color: #ffff;
+    border: 1px solid #41ad49;
     font-family: "verdana-pro-condensed", sans-serif;
     font-weight: 400;
     font-style: italic;
+    position: absolute; /* Position it relative to the nearest positioned ancestor */
+    bottom: 1%;
+    left: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    opacity: 85%;
 }
       
